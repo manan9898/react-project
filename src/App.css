@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+.sidebar
+{
+  
+  width: 0px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 24px;
+  position: fixed;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+  
+}
+
+.active
+{
+  width: 390px;
+  right:0px
+}
+.manan{
+  color: pink;
+}
+.hadder
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 358px;
+  height: 40px;
+}
+
+.cross>button
+{
+  width: 40px;
+  height: 40px;
+ border: none;
+ background-color: #FFFFFF;
+ cursor: pointer;
+
+  
+
+}
+.save{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  height: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Rubik';
+  color: #FFFFFF;
+  background-color: #382F2F;
+  width: 70px;
+  margin-left: auto;
+  cursor: pointer;
+  
+}
+
+.add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+ background-color: #FFFFFF;
+
+  height: 40px;
+  width: 70px;
+  cursor: pointer;
+}
+.activity
+{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  width: 358px;
+  height: 52px;
+  border-radius: 50px;
+  border: none;
+ 
+}
+.activity > input
+{
+  width: 326px;
+  height: 36px;
+  border: none;
+}
+.activity >input::placeholder
+{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #A7ABC4;
+  border: none;
+
+}
+
+.Description{
+  width: 358px;
+  height: 120px;
+  background:#F2F3F7;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+
+  
+
+}
+.Description >input{
+  width: 326px;
+  height: 24px;
+  border: none;
+  background:#F2F3F7;
+  outline-width: none;
+ 
+}
+.activity >input:focus{
+  outline: none;
+}
+
+
+.capabilities
+{
+  width: 358px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+}
+.capabilities >div{
+  width: 88px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.capabilities >div>label{
+  font-family: 'Rubik';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  align-items: center;
+  display: flex;
+  color: #382F2F;
+  
+}
+.Description >input:focus{
+  outline: none;
+}
+
+.Description >input::placeholder{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+ 
+  display: flex;
+  align-items: center;
+ color:#747891;
+ border: none;
+}
+.line
+{
+  width: 358px;
+  height: 0px;
+  border-bottom: 1px solid #D0D1D9;
+ 
+}
+.wrapp
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 358px;
+  height: 40px;
+
+}
+.enter{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap:10px;
+  width: 294px;
+  height: 40px;
+  background-color: #F2F3F7;
+  border-radius: 50px;
+}
+.entercapability
+{
+  width: 262px;
+  height: 24px;
+  display: flex;
+ 
+  justify-content: flex-start;
+  align-items: center;
+}
+.entercapability>input
+{
+border: none;
+background-color: #F2F3F7;
+
+
+}
+.entercapability>input:focus{
+  outline: none;
+}
+.list_items
+{
+  position: relative;
+   width: 262px; 
+}
+.itema_
+{
+  font-size: 16px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+}
+.list{
+  position: absolute;
+  margin-left: 80px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.entercapability>input::placeholder{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #F2F3F7;
+  border: none;
+}
+.wrapp>span{
+  width: 40px;
+  height: 40px;
+  background: #382F2F;
+  border-radius: 50%;
+}
+.button{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 40px;
+  position: absolute;
+  width: 148px;
+  background-color: #382F2F;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Rubik';
+  cursor: pointer;
+}
